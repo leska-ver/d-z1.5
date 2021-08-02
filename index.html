@@ -1,326 +1,419 @@
 <!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>компании Blanchard</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<style>
-		body {
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>компании Blanchard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
       margin: 0;
-			padding: 0;
-			width: 100% !important;
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;			
-			line-height: 100%;
-		}
-
-		[style*="Open Sans"] {
-      font-family: 'Open Sans', arial, sans-serif !important;
+      padding: 0;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      line-height: 100%;
     }
 
-    [style*="Verbana"] {
-      font-family: Arial, Helvetica, sans-serif !important;
+    [style*="Arial"] {
+      font-family: 'Arial', arial, sans-serif !important;
     }
 
-		img {
+    img {
       display: block;
       margin: 0;
-			padding: 0;
-			border:none;
-			-ms-interpolation-mode: bicubic;
-			max-width: 100%!important;
-			text-decoration: none;			
-			outline: none;			
-		}
-    
-		table td {
-			border-collapse: collapse;
-		}
-    
-		table {
-			border-collapse: collapse;
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
-		}
-
-    .table-flex tbody, .table-flex-social  tbody {
-      display: flex;
+      padding: 0;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100% !important;
+      text-decoration: none;
+      outline: none;
     }
 
-    @media(max-width: 540px)  {
-      .table-520 {
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .header__logo {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .text-item {
+      padding-top: 30px;
+      padding-left: 40px;
+      padding-bottom: 25px;
+      padding-right: 40px;
+    }
+
+    .text-item__title {
+      margin: 0;
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .text-item__descr {
+      margin: 0;
+      margin-bottom: 12px;
+      font-size: 12px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .painters {
+      padding-top: 20px;
+      padding-right: 40px;
+      padding-bottom: 6px;
+      padding-left: 40px;
+    }
+
+    .painters__item td {
+      padding-bottom: 21px;
+      color: #fff;
+    }
+
+    .painters__title {
+      margin: 0;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+
+    .painters__img {
+      margin-bottom: 12px;
+    }
+
+    .painters__subtitle {
+      margin: 0;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .painters__descr {
+      margin: 0;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .more {
+      padding-top: 29px;
+      padding-right: 40px;
+      padding-bottom: 6px;
+      padding-left: 40px;
+    }
+
+    .more__item {
+      vertical-align: top;
+      width: 138px;
+    }
+
+    .more__title {
+      margin: 0;
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .more__item img {
+      margin-bottom: 11px;
+    }
+
+    .more__descr {
+      margin: 0;
+      font-size: 12px;
+      line-height: 18px;
+      color: #515151;
+    }
+
+    .link-td {
+      height: 45px;
+      background: #9d5cd0;
+      border-radius: 48px;
+    }
+
+    .more-td {
+      padding-top: 26px;
+      padding-bottom: 32px; 
+    }
+
+    .link-td a {
+      display: block;
+      height: 45px;
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 45px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer {
+      padding-top: 27px;
+      padding-bottom: 8px;
+    }
+
+    .footer__copy {
+      margin: 0;
+      padding-top: 5px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 24px;
+      color: #757575;
+    }
+
+    .footer-2 {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      font-weight: normal;
+      font-size: 10px;
+      color:#757575;
+    }
+
+    .footer-2 a {
+      color: #9d5cd0;
+    }
+
+    @media(max-width: 640px) {
+      .table-600 {
         width: 280px !important;
       }
 
-      .hero-img {
-        width: 240px !important;
-        height: 135px !important;
+      .more__item {
+        display: block !important;
+        padding-bottom: 20px;
       }
 
-      .table-flex tbody {
-        flex-direction: column;
-      }
+      .more__item br {
+        display: none;
+      }    
     }
-	</style>
+  </style>
 </head>
 
-<body style="margin: 0; padding: 0;">	
+<body style="margin: 0; padding: 0;">
   <!--Скрытый див, нужен!-->
-  <div style="display:none; width:0; height:0; font-size:0px; font-color:#ffffff; opacity:0; visibility:hidden;">Тестовое письмо</div>
-  <table cellpadding="0" cellspacing="0" width="100%">
+  <div style="display:none; width:0; height:0; font-size:0px; font-color:#ffffff; opacity:0; visibility:hidden;">
+    Тестовое письмо</div>
+  <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
     <tr>
-      <td>
-        <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="100%" bgcolor="#000">
+      <td align="center">
+        <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000">
           <tr>
-            <td align="center">
-              <table width="520" class="table-520" cellspadding="0" cellspacing="0">
-                <tr>
-                  <td align="center" style="padding-top: 30px; padding-bottom: 30px;">
-                    <img src="https://rawcdn.githack.com/ivamaria/blanchard-letter/0cbb513311ae16ee3a0e3398fad83068e40cd042/image/logo.png" width="187" alt="Логотип Blanchard">
-                  </td>
-                </tr>                
-              </table>
-              <table cellpadding="0" cellspacing="0" width="100%">
-                 <tr>
-                  <td>
-                    <img src="https://rawcdn.githack.com/ivamaria/blanchard-letter/0cbb513311ae16ee3a0e3398fad83068e40cd042/image/hero.jpg" width="100%" alt="Изображение">
-                  </td>
-                </tr>   
-              </table>
+            <td align="center" class="header__logo">
+              <img
+                src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/blanchard.png"
+                alt="Логотип Blanchard" />
             </td>
           </tr>
-        </table>
-        <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="100%" bgcolor="#fff">
           <tr>
             <td align="center">
-              <table width="520" class="table-520" cellspadding="0" cellspacing="0">
-                <tr>
-                  <td style="padding-top: 32px; padding-bottom: 13px;">
-                    <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; color: #515151; margin: 0; font-size: 20px; line-height: 24px;">
-                      Торжество импрессионизма
-                    </h1>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-bottom: 13px;">    
-                    <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 12px; line-height: 24px; color: #515151;">
-                      Опыт говорит нам, что семантический разбор внешних противодействий требует анализа новых принципов формирования материально-технической и кадровой базы.<br>Задача организации, в особенности же внедрение современных методик, в своём классическом представлении, допускает внедрение глубокомысленных рассуждений. Есть над чем задуматься: элементы политического процесса преданы социально-демократической анафеме! Но интерактивные прототипы заблокированы в рамках своих собственных рациональных ограничений. Сторонники тоталитаризма в науке ограничены исключительно образом мышления.
-                    </p>
-                  </td> 
-                </tr>
-              </table>     
+              <img
+                src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/foto-1.jpg"
+                alt="Изображение" />
             </td>
           </tr>
-        </table>
-        <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="100%" bgcolor="#000">
           <tr>
-            <td align="center" style="padding-top: 26px; padding-bottom: 26px;">
-              <table width="520" class="table-520" cellspadding="0" cellspacing="0">
+            <td class="text-item" bgcolor="#fff" style="font-family: Arial, Helvetica, sans-serif;">
+              <h3 class="text-item__title">
+                Торжество импрессионизма
+              </h3>
+              <p class="text-item__descr">
+                Опыт говорит нам, что семантический разбор внешних противодействий требует анализа новых принципов
+                формирования
+                материально-технической и кадровой базы.
+              </p>
+              <p class="text-item__descr">
+                Задача организации, в особенности же внедрение современных методик, в своём классическом представлении,
+                допускает внедрение глубокомысленных рассуждений. Есть над чем задуматься: элементы политического
+                процесса
+                преданы социально-демократической анафеме! Но интерактивные прототипы заблокированы в рамках своих
+                собственных
+                рациональных ограничений. Сторонники тоталитаризма в науке ограничены исключительно образом мышления.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="painters" style="font-family: Arial, Helvetica, sans-serif;">
+              <h2 class="painters__title">
+                Представленные художники
+              </h2>
+              <table cellpadding="0" cellspacing="0" class="painters__item">
                 <tr>
-                  <td style="padding-bottom: 26px;">
-                    <h2 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#fff;">
-                      Представленные художники
-                    </h2>
-                  </td>
-                </tr>
-                <tr>
-                  <td>    
-                    <img src="https://raw.githubusercontent.com/ivamaria/blanchard-letter/master/image/card1.png" width="100%" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top: 21px;">
-                    <h3 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
+                  <td style="font-family: Arial, Helvetica, sans-serif;">
+                    <img class="painters__img"
+                      src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/foto-2.jpg"
+                      alt="Картина Гогена" />
+                    <h3
+                      style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
                       Поль Гоген
                     </h3>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-bottom: 10px;">
-                    <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; color:#fff; font-size: 12px; line-height: 18px;">
-                      Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в значительной степени обусловливает важность укрепления моральных ценностей.
+                    <p class="painters__descr">
+                      Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в значительной степени
+                      обусловливает
+                      важность укрепления моральных ценностей.
                     </p>
                   </td>
                 </tr>
+              </table>
+              <table cellpadding="0" cellspacing="0" class="painters__item">
                 <tr>
-                  <td>    
-                    <img src="https://rawcdn.githack.com/ivamaria/blanchard-letter/0cbb513311ae16ee3a0e3398fad83068e40cd042/image/ogust-card.png" width="100%" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top: 21px;">
-                    <h3 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
+                  <td style="font-family: Arial, Helvetica, sans-serif;">
+                    <img class="painters__img"
+                      src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/foto-3.jpg"
+                      alt="Картина Ренуара" />
+                    <h3 class="painters__subtitle">
                       Огюст Ренуар
                     </h3>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-bottom: 10px;">
-                    <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; color:#fff; font-size: 12px; line-height: 18px;">
-                      А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом.
+                    <p class="painters__descr">
+                      А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные особенности
+                      картины в
+                      целом.
                     </p>
                   </td>
                 </tr>
+              </table>
+              <table cellpadding="0" cellspacing="0" class="painters__item">
                 <tr>
-                  <td>    
-                    <img src="https://rawcdn.githack.com/ivamaria/blanchard-letter/0cbb513311ae16ee3a0e3398fad83068e40cd042/image/clod-card.png" width="100%" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top: 21px;">
-                    <h3 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
+                  <td style="font-family: Arial, Helvetica, sans-serif;">
+                    <img class="painters__img" src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/foto-4.jpg"
+                       alt="Картина Моне" />
+                    <h3
+                      style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
                       Клод Моне
                     </h3>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-bottom: 10px;">
-                    <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; color:#fff; font-size: 12px; line-height: 18px;">
+                    <p class="painters__descr">
                       Современная методология разработки однозначно фиксирует необходимость системы массового участия.
                     </p>
                   </td>
                 </tr>
+              </table>
+              <table cellpadding="0" cellspacing="0" class="painters__item">
                 <tr>
-                  <td>    
-                    <img src="https://rawcdn.githack.com/ivamaria/blanchard-letter/0cbb513311ae16ee3a0e3398fad83068e40cd042/image/mane-card.png" width="100%" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top: 21px;">
-                    <h3 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
+                  <td style="font-family: Arial, Helvetica, sans-serif;">
+                    <img class="painters__img" src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/foto-5.jpg"
+                      width="100%" alt="Изображение" />
+                    <h3
+                      style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
                       Эдуард Мане
                     </h3>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-bottom: 10px;">
-                    <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; color:#fff; font-size: 12px; line-height: 18px;">
+                    <p class="painters__descr">
                       Но социально-экономическое развитие является качественно новой ступенью вывода текущих активов.
                     </p>
                   </td>
                 </tr>
+              </table>
+              <table cellpadding="0" cellspacing="0" class="painters__item">
                 <tr>
-                  <td>    
-                    <img src="https://rawcdn.githack.com/ivamaria/blanchard-letter/0cbb513311ae16ee3a0e3398fad83068e40cd042/image/vangog.png" width="100%" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-top: 21px;">
-                    <h3 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
+                  <td style="font-family: Arial, Helvetica, sans-serif;">
+                    <img class="painters__img" src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/foto-6.jpg"
+                      width="100%" alt="Изображение" />
+                    <h3
+                      style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 700; color:#fff; font-size: 12px; line-height: 24px;">
                       Винсент Ван Гог
                     </h3>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; color:#fff; font-size: 12px; line-height: 18px;">
-                      Повседневная практика показывает, что разбавленное изрядной долей эмпатии, рациональное мышление требует анализа поставленных обществом задач.
+                    <p
+                      style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; color:#fff; font-size: 12px; line-height: 18px;">
+                      Повседневная практика показывает, что разбавленное изрядной долей эмпатии, рациональное мышление
+                      требует анализа поставленных обществом задач.
                     </p>
                   </td>
                 </tr>
-              </table>      
-            </td>
-          </tr>
-        </table>   
-        <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="100%" bgcolor="#fff">
-          <tr>
-            <td align="center" style="padding-top: 23px; padding-bottom: 32px;">
-              <table width="520" class="table-520" cellspadding="0" cellspacing="0">
-                <tr>
-                  <td>
-                    <table cellspadding="0" cellspacing="0">
-                      <tr>
-                        <td style="padding-bottom: 11px;">
-                          <h2 style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; color: #515151; font-size: 16px; line-height: 24px;">
-                            И это ещё не всё!
-                          </h2>
-                        </td>
-                      </tr>
-                    </table>                
-                    <table class="table-flex" cellspadding="0" cellspacing="0">
-                    <!--в head .table-flex tbody {display: flex;}-->
-                      <tr>
-                        <td style="width: 138px; padding-right: 27px;">     
-                          <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/check-square.png" width="36" alt="Иконка">
-                          <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 400; color: #515151; margin: 0; padding-top: 11px; font-size: 12px; line-height: 18px;">
-                            Уникальные подборки работ с авторскими рецензиями
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="width: 138px; padding-right: 27px;">     
-                          <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/calendar.png" width="36" alt="Иконка">
-                          <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 400; color: #515151; margin: 0; padding-top: 11px; font-size: 12px; line-height: 18px;">
-                            Возможность настроить нашу рассылку под свой личный вкус
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="width: 138px">     
-                          <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/arrow-up-circle.png" width="36" alt="Иконка">
-                          <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 400; color: #515151; margin: 0; padding-top: 11px; font-size: 12px; line-height: 18px;">
-                            У вас есть пожелания и предложения? Напишите нам в ответ на это письмо!
-                          </p>
-                        </td>
-                      </tr>                 
-                    </table>
-                    <table width="520" class="table-520" cellspadding="0" cellspacing="0">                
-                      <tr>
-                        <td align="center">
-                          <a href="" style="display: block; margin-top: 34px; padding-top: 14px; padding-bottom: 14px; border-top-left-radius: 48px; border-top-right-radius: 48px; border-bottom-right-radius: 48px; border-bottom-left-radius: 48px; width: 240px; font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 14px; color: #fff; background-color: #9D5CD0; text-decoration: none;">
-                            Узнать все подробности
-                          </a>
-                        </td>
-                      </tr>
-                    </table> 
-                  </td>
-                </tr>        
-              </table>     
-            </td>
-          </tr>
-        </table> 
-        <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="100%" bgcolor="#000">
-          <tr>
-            <td align="center">
-              <table width="520" class="table-520" cellspadding="0" cellspacing="0">
-                <tr>
-                  <td align="center" style="padding-top: 27px; padding-bottom: 21px;">
-                    <table class="table-flex-social" style="width: 138px;" cellspadding="0" cellspacing="0">
-                      <!--в head .table-flex tbody {display: flex;}-->
-                        <tr>
-                          <td style="padding-right: 19px;">     
-                            <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/vk.png" width="35" alt="VK">
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding-right: 19px;">     
-                            <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/instagram.png" width="35" alt="instagram">
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>     
-                            <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/fb.png" width="35" alt="facebook">
-                          </td>
-                        </tr>
-                    </table>
-                    <table cellspadding="0" cellspacing="0">
-                      <tr>
-                        <td>
-                          <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: 400; color:#757575; font-size: 12px; line-height: 24px;">
-                            Blanchard &copy;&nbsp;2020&nbsp;/ Все права защищены
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>                
               </table>
             </td>
           </tr>
-        </table>       
+          <tr>
+            <td class="more" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;">
+              <h2 class="more__title">
+                И это ещё не всё!
+              </h2>
+              <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td class="more__item" style="font-family: Arial, Helvetica, sans-serif;">
+                    <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/check-square.png"
+                      alt="Иконка" />
+                    <p class="more__descr">
+                      Уникальные подборки <br /> работ с авторскими <br /> рецензиями
+                    </p>
+                  </td>
+                  <td class="more__item" style="font-family: Arial, Helvetica, sans-serif;">
+                    <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/calendar.png" alt="Иконка" />
+                    <p class="more__descr">
+                      Возможность настроить <br /> нашу рассылку под свой <br /> личный вкус
+                    </p>
+                  </td>
+                  <td class="more__item" style="font-family: Arial, Helvetica, sans-serif;">
+                    <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/arrow-up-circle.png" alt="Иконка" />
+                    <p
+                      style="font-family: Arial, Helvetica, sans-serif; font-weight: 400; color: #515151; margin: 0; padding-top: 11px; font-size: 12px; line-height: 18px;">
+                      У вас есть пожелания и предложения? Напишите нам в ответ на это письмо!
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#ffffff" class="more-td" align="center" style="font-family: Arial, Helvetica, sans-serif;">
+              <table cellpadding="0" cellspacing="0" width="240">
+                <tbody>
+                  <tr>
+                    <td align="center" class="link-td" valign="middle">
+                      <a href="#" target="_blank">Узнать все подробности</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="footer" align="center" bgcolor="#000000" style="font-family: Arial, Helvetica, sans-serif;">
+              <table cellpadding="0" cellspacing="0" width="160">
+                <tr>
+                  <td align="center">
+                    <a href="#" target="_blank">
+                      <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/vk.png" alt="VK" />
+                    </a>
+                  </td>
+                  <td align="center">
+                    <a href="#" target="_blank">
+                      <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/instagram.png"
+                        alt="instagram" />
+                    </a>
+                  </td>
+                  <td align="center">
+                    <a href="#" target="_blank">
+                      <img src="https://raw.githubusercontent.com/leska-ver/d-z1.5/master/fb.png" alt="facebook" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <p class="footer__copy">Blanchard © 2020 / Все права защищены</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="footer-2" align="center" valign="middle" bgcolor="#ebebeb"
+              style="font-family: Arial, Helvetica, sans-serif;">
+              Вы можете так же <a href="#">отписаться от рассылки</a>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
-  </table>  
+  </table>
 </body>
+
 </html>
